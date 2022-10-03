@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 project (mp3lame)
 
 if(WIN32)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Dll)
 endif()
 
